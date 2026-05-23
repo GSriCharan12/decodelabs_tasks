@@ -1,0 +1,6 @@
+# Build and temporary files
+.dist/
+
+# OS files
+.DS_Store
+Thumbs.db
