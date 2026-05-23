@@ -1,6 +1,6 @@
 # Decode Labs Tasks
 
-This repository collects all my Decode Labs projects organized as Git submodules.
+This repository collects all my Decode Labs projects.
 
 ## Projects
-- [Task 3 - Futuristic Interactive Component](https://github.com/GSriCharan12/Task-3-G_Sri_Charan)
+- [Task 3 - Futuristic Interactive Component](./Task-3-G_Sri_Charan)

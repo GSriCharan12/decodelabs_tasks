@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aether Nexus - Next-generation interactive platform for digital systems and intelligent experiences.">
+    <title>Aether Nexus | Interactive Digital Experience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-compass-drafting"></i></span>
+                Aether<span class="logo-accent">Nexus</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#customizer" class="nav-link">Ecosystem</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-glow"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="tag-pulse"></span>
+                        <span>Next-Gen Interface Active</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Architecting <span class="gradient-text">Intelligent</span> Digital Realities
+                    </h1>
+                    <p class="hero-description">
+                        Aether Nexus combines immersive design with cognitive computational layers to build interactive ecosystem modules that scale seamlessly.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#gallery" class="btn btn-primary">Explore Gallery <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#customizer" class="btn btn-secondary">Build Ecosystem</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-latency">14ms</span>
+                            <span class="stat-label">Ultra-Low Latency</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-uptime">99.99%</span>
+                            <span class="stat-label">System Uptime</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-users">15M+</span>
+                            <span class="stat-label">Active Nodes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-wrapper" id="hero-visual-card">
+                        <img src="assets/hero.png" alt="Futuristic 3D Neon Shape" class="hero-img">
+                        <div class="glass-overlay-card">
+                            <div class="overlay-card-header">
+                                <span class="circle red"></span>
+                                <span class="circle yellow"></span>
+                                <span class="circle green"></span>
+                                <span class="card-title-text">Core_Engine.sys</span>
+                            </div>
+                            <div class="overlay-card-body">
+                                <p class="code-line"><span class="code-keyword">const</span> nexus = <span class="code-string">'Aether'</span>;</p>
+                                <p class="code-line"><span class="code-keyword">await</span> nexus.initialize({</p>
+                                <p class="code-line indent">cognitive: <span class="code-boolean">true</span>,</p>
+                                <p class="code-line indent">latency: <span class="code-number">12</span></p>
+                                <p class="code-line">});</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features (Tab System & Show/Hide specs) -->
+        <section class="features-section" id="features">
+            <div class="section-header">
+                <span class="section-subtitle">Features</span>
+                <h2 class="section-title">Technological Core Pillars</h2>
+                <p class="section-desc">Toggle through our system pillars to see how Aether Nexus operates at the architectural level.</p>
+            </div>
+
+            <div class="features-container">
+                <!-- Tab Headers -->
+                <div class="tabs-nav" role="tablist">
+                    <button class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-ui">
+                        <i class="fa-solid fa-display"></i> Immersive UI
+                    </button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-ai">
+                        <i class="fa-solid fa-brain"></i> Cognitive AI
+                    </button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-cloud">
+                        <i class="fa-solid fa-server"></i> Cloud Core
+                    </button>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="tabs-content-container">
+                    <!-- Tab 1 -->
+                    <div class="tab-pane active" id="tab-ui" role="tabpanel">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Immersive Dynamic User Interfaces</h3>
+                                <p>Our interfaces are built with high-fidelity sensory feedback, sub-pixel rendering mechanics, and micro-interaction states that reduce cognitive load while maximizing user engagement.</p>
+                                <ul class="features-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Sub-millisecond animation frame updates</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Intuitive fluid grid layout controls</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Dynamic asset rendering and loading</li>
+                                </ul>
+                            </div>
+                            <div class="tab-visual-demo">
+                                <div class="demo-interactive-box">
+                                    <div class="demo-element-row">
+                                        <span class="demo-label">Scale Factor</span>
+                                        <input type="range" id="demo-slider" min="0.5" max="1.5" step="0.05" value="1">
+                                        <span id="slider-val" class="badge">1.0x</span>
+                                    </div>
+                                    <div class="demo-canvas">
+                                        <div class="demo-object" id="demo-interactive-object"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2 -->
+                    <div class="tab-pane" id="tab-ai" role="tabpanel">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Cognitive Intelligence Engine</h3>
+                                <p>Integrated deep learning networks analyze live user behaviour pipelines in real time. Systems self-optimize, dynamically tailoring content distribution profiles and caching frequencies.</p>
+                                <ul class="features-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Multi-modal telemetry parsing</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Predictive pre-rendering modules</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Semantic memory integration layers</li>
+                                </ul>
+                            </div>
+                            <div class="tab-visual-demo">
+                                <div class="demo-interactive-box">
+                                    <div class="ai-console-header">
+                                        <span>AI System Telemetry</span>
+                                        <button class="btn-small" id="run-telemetry">Execute Query</button>
+                                    </div>
+                                    <div class="console-body" id="console-logs">
+                                        <p class="console-line system">[SYS] Awaiting input trigger...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3 -->
+                    <div class="tab-pane" id="tab-cloud" role="tabpanel">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Distributed Edge Mesh Networks</h3>
+                                <p>Global cluster distribution ensures your digital modules are stored and retrieved from the geographically nearest server node, offering unbeatable cold-boot timings and data security.</p>
+                                <ul class="features-list">
+                                    <li><i class="fa-solid fa-circle-check"></i> Dynamic geographical routing</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Encrypted ledger data replication</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Auto-scaling network compute load</li>
+                                </ul>
+                            </div>
+                            <div class="tab-visual-demo">
+                                <div class="demo-interactive-box">
+                                    <div class="nodes-grid">
+                                        <div class="node active" data-node="1"><span>US-East</span><div class="status-dot"></div></div>
+                                        <div class="node" data-node="2"><span>EU-Central</span><div class="status-dot"></div></div>
+                                        <div class="node" data-node="3"><span>AP-South</span><div class="status-dot"></div></div>
+                                        <div class="node" data-node="4"><span>SA-East</span><div class="status-dot"></div></div>
+                                    </div>
+                                    <div class="node-details">
+                                        <p class="node-info" id="node-info-text">Select a node grid terminal to check current active traffic stats.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show/Hide Section (Technical Specifications Panel) -->
+            <div class="specs-wrapper">
+                <div class="specs-toggle-container">
+                    <button class="btn btn-secondary-outline" id="toggle-specs-btn">
+                        <span>Show Detailed System Specs</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                
+                <div class="specs-dropdown-content" id="specs-table-content">
+                    <div class="specs-table-wrapper">
+                        <table class="specs-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric System</th>
+                                    <th>Standard Node</th>
+                                    <th>Aether Optimized</th>
+                                    <th>Performance Gain</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Virtual DOM Reconciliation</td>
+                                    <td>1.8ms</td>
+                                    <td>0.2ms</td>
+                                    <td class="text-green">+800%</td>
+                                </tr>
+                                <tr>
+                                    <td>Database Read-Write Cycle</td>
+                                    <td>124ms</td>
+                                    <td>14ms</td>
+                                    <td class="text-green">+885%</td>
+                                </tr>
+                                <tr>
+                                    <td>Cold Boot Startup Latency</td>
+                                    <td>340ms</td>
+                                    <td>45ms</td>
+                                    <td class="text-green">+755%</td>
+                                </tr>
+                                <tr>
+                                    <td>Memory Usage under Multi-thread</td>
+                                    <td>218MB</td>
+                                    <td>74MB</td>
+                                    <td class="text-green">+294%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards / Gallery Section (Filterable Grid) -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Nexus Modules Catalog</h2>
+                <p class="section-desc">Browse our active infrastructure components. Filter by category to find specific deployment patterns.</p>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Filters -->
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All Modules</button>
+                    <button class="filter-btn" data-filter="ai">AI Core</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud Compute</button>
+                    <button class="filter-btn" data-filter="ui">Interface UI</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Card 1 (AI) -->
+                    <article class="gallery-card" data-category="ai">
+                        <div class="card-img-container">
+                            <img src="assets/card_ai.png" alt="Cognitive Neural Network" class="card-img">
+                            <div class="card-badge badge-ai">AI Core</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Cognitive Synapse</h3>
+                            <p class="card-text">Advanced semantic parser and decision agent module that coordinates system telemetry dynamically.</p>
+                            <button class="btn-card-action" data-card-id="1">Explore Module <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 (Cloud) -->
+                    <article class="gallery-card" data-category="cloud">
+                        <div class="card-img-container">
+                            <div class="svg-fallback-card cloud-bg">
+                                <svg viewBox="0 0 100 100" class="card-svg">
+                                    <defs>
+                                        <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#06B6D4" />
+                                            <stop offset="100%" stop-color="#3B82F6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="30" fill="url(#cloudGrad)" opacity="0.1" />
+                                    <path d="M35 55 h30 a10 10 0 0 0 0 -20 a15 15 0 0 0 -25 -5 a12 12 0 0 0 -15 15 a10 10 0 0 0 10 10 z" fill="none" stroke="url(#cloudGrad)" stroke-width="2" stroke-linejoin="round" />
+                                    <circle cx="50" cy="45" r="2" fill="#06B6D4" />
+                                    <circle cx="62" cy="50" r="1.5" fill="#3B82F6" />
+                                    <circle cx="38" cy="48" r="1" fill="#06B6D4" />
+                                </svg>
+                            </div>
+                            <div class="card-badge badge-cloud">Cloud Compute</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Nimbus Cluster</h3>
+                            <p class="card-text">Edge-based computing containers offering instant scale, zero cold-boots, and decentralized cluster storage.</p>
+                            <button class="btn-card-action" data-card-id="2">Explore Module <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 (UI) -->
+                    <article class="gallery-card" data-category="ui">
+                        <div class="card-img-container">
+                            <div class="svg-fallback-card ui-bg">
+                                <svg viewBox="0 0 100 100" class="card-svg">
+                                    <defs>
+                                        <linearGradient id="uiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#EC4899" />
+                                            <stop offset="100%" stop-color="#8B5CF6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="30" fill="url(#uiGrad)" opacity="0.1" />
+                                    <rect x="25" y="30" width="50" height="40" rx="4" fill="none" stroke="url(#uiGrad)" stroke-width="2" />
+                                    <line x1="25" y1="40" x2="75" y2="40" stroke="url(#uiGrad)" stroke-width="1.5" />
+                                    <circle cx="32" cy="35" r="1.5" fill="#EC4899" />
+                                    <circle cx="38" cy="35" r="1.5" fill="#8B5CF6" />
+                                    <polygon points="45,50 60,50 52.5,60" fill="none" stroke="url(#uiGrad)" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="card-badge badge-ui">Interface UI</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Prism Interface</h3>
+                            <p class="card-text">Fluid motion UI component suite that compiles to web-assembly, guaranteeing 120FPS rendering.</p>
+                            <button class="btn-card-action" data-card-id="3">Explore Module <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 (Cloud / Ledger) -->
+                    <article class="gallery-card" data-category="cloud">
+                        <div class="card-img-container">
+                            <div class="svg-fallback-card ledger-bg">
+                                <svg viewBox="0 0 100 100" class="card-svg">
+                                    <defs>
+                                        <linearGradient id="ledgerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#10B981" />
+                                            <stop offset="100%" stop-color="#059669" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="30" fill="url(#ledgerGrad)" opacity="0.1" />
+                                    <polygon points="50,22 75,35 75,65 50,78 25,65 25,35" fill="none" stroke="url(#ledgerGrad)" stroke-width="2" stroke-linejoin="round"/>
+                                    <line x1="50" y1="22" x2="50" y2="78" stroke="url(#ledgerGrad)" stroke-width="1.5" />
+                                    <line x1="50" y1="50" x2="25" y2="35" stroke="url(#ledgerGrad)" stroke-width="1.5" />
+                                    <line x1="50" y1="50" x2="75" y2="35" stroke="url(#ledgerGrad)" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="card-badge badge-ledger">Cloud Ledger</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Sentinel Vault</h3>
+                            <p class="card-text">Secure distributed storage ledger that audits every system request with end-to-end cryptographic verification.</p>
+                            <button class="btn-card-action" data-card-id="4">Explore Module <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecosystem Tech Customizer (Interactive Calculator Section) -->
+        <section class="customizer-section" id="customizer">
+            <div class="section-header">
+                <span class="section-subtitle">Interactive Design</span>
+                <h2 class="section-title">Ecosystem Blueprint Builder</h2>
+                <p class="section-desc">Compose your cloud digital ecosystem on-the-fly and observe latency, data capacity, and budget forecasts instantly.</p>
+            </div>
+
+            <div class="customizer-container">
+                <div class="customizer-controls">
+                    <h3>Configure Module Integrations</h3>
+                    
+                    <div class="control-group">
+                        <label class="control-label">Select Core Components</label>
+                        <div class="toggle-grid">
+                            <!-- Toggle Card 1 -->
+                            <div class="toggle-card active" data-component="ai-engine" data-cost="49" data-speed="12" data-throughput="250">
+                                <div class="toggle-header">
+                                    <i class="fa-solid fa-brain"></i>
+                                    <span>AI Engine</span>
+                                </div>
+                                <div class="toggle-footer">
+                                    <span>+$49/mo</span>
+                                </div>
+                                <div class="check-indicator"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <!-- Toggle Card 2 -->
+                            <div class="toggle-card" data-component="cdn-mesh" data-cost="29" data-speed="-8" data-throughput="500">
+                                <div class="toggle-header">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>Global CDN</span>
+                                </div>
+                                <div class="toggle-footer">
+                                    <span>+$29/mo</span>
+                                </div>
+                                <div class="check-indicator"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <!-- Toggle Card 3 -->
+                            <div class="toggle-card active" data-component="realtime-sync" data-cost="39" data-speed="4" data-throughput="150">
+                                <div class="toggle-header">
+                                    <i class="fa-solid fa-rotate"></i>
+                                    <span>Sync DB</span>
+                                </div>
+                                <div class="toggle-footer">
+                                    <span>+$39/mo</span>
+                                </div>
+                                <div class="check-indicator"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <!-- Toggle Card 4 -->
+                            <div class="toggle-card" data-component="analytics" data-cost="19" data-speed="2" data-throughput="100">
+                                <div class="toggle-header">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <span>Analytics</span>
+                                </div>
+                                <div class="toggle-footer">
+                                    <span>+$19/mo</span>
+                                </div>
+                                <div class="check-indicator"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Input -->
+                    <div class="control-group">
+                        <div class="slider-header">
+                            <label for="traffic-slider" class="control-label">Monthly Active Sessions</label>
+                            <span id="traffic-display" class="badge">250,000</span>
+                        </div>
+                        <input type="range" id="traffic-slider" min="10000" max="1000000" step="10000" value="250000" class="custom-slider">
+                        <div class="slider-labels">
+                            <span>10K</span>
+                            <span>500K</span>
+                            <span>1M</span>
+                        </div>
+                    </div>
+
+                    <!-- Switch Input -->
+                    <div class="control-group">
+                        <div class="switch-row">
+                            <div class="switch-text">
+                                <span class="control-label inline-label">Platinum Priority Support</span>
+                                <p class="sub-label">Guaranteed 15min SLA response window & dedicated support engineer.</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="support-checkbox" data-cost="99">
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Results Panel -->
+                <div class="customizer-results">
+                    <h3>Blueprint Metrics</h3>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <span class="result-label">Estimated Price</span>
+                            <div class="result-number-container">
+                                <span class="currency">$</span>
+                                <span class="result-num" id="total-price">88</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar price-bar" style="width: 25%"></div>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <span class="result-label">Projected Latency</span>
+                            <div class="result-number-container">
+                                <span class="result-num" id="total-latency">16</span>
+                                <span class="period">ms</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar latency-bar" style="width: 32%"></div>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <span class="result-label">Throughput Capacity</span>
+                            <div class="result-number-container">
+                                <span class="result-num" id="total-throughput">400</span>
+                                <span class="period">K reqs/s</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar throughput-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Build Manifest -->
+                    <div class="blueprint-manifest">
+                        <h4>Active Modules Manifest:</h4>
+                        <ul class="manifest-list" id="manifest-list">
+                            <li><i class="fa-solid fa-square-check text-cyan"></i> Core Cluster License</li>
+                            <!-- Dynamic additions insert here -->
+                        </ul>
+                    </div>
+
+                    <button class="btn btn-primary btn-full" id="deploy-blueprint-btn">
+                        Deploy Built Ecosystem <i class="fa-solid fa-circle-nodes"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / Contact Section (Live form feedback) -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <span class="section-subtitle text-left">Stay Informed</span>
+                    <h2 class="section-title text-left">Connect with Aether</h2>
+                    <p class="section-desc text-left">Subscribe to our newsletter to receive system telemetry alerts, tech showcases, and development guides straight to your terminal inbox.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="newsletter-form" novalidate>
+                        <div class="form-group">
+                            <label for="subscriber-name">Terminal Operator Name</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="subscriber-name" placeholder="e.g. Neo" required>
+                            </div>
+                            <span class="error-msg" id="name-error">Please supply an operator name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subscriber-email">Operator Terminal Email</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="subscriber-email" placeholder="e.g. operator@aether.io" required>
+                            </div>
+                            <span class="error-msg" id="email-error">Please supply a valid terminal email routing address.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="btn-submit">
+                            Establish Link <i class="fa-solid fa-link"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Dynamic Alert Message (Initially Hidden) -->
+                    <div class="live-alert" id="form-alert">
+                        <div class="alert-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="alert-content">
+                            <h4 id="alert-title">Connection Successful</h4>
+                            <p id="alert-body">Link established. Subscription logged for operator.</p>
+                        </div>
+                        <button class="alert-close" id="close-alert-btn" aria-label="Close message">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-compass-drafting"></i></span>
+                    Aether<span class="logo-accent">Nexus</span>
+                </a>
+                <p class="footer-slogan">Engineering dynamic, responsive interfaces for the computing systems of tomorrow.</p>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Ecosystem</h4>
+                    <ul>
+                        <li><a href="#">System Console</a></li>
+                        <li><a href="#">Nimbus Storage</a></li>
+                        <li><a href="#">Prism Visualizer</a></li>
+                        <li><a href="#">Sentinel Ledger</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Terminal Docs</a></li>
+                        <li><a href="#">API Directory</a></li>
+                        <li><a href="#">Status Monitor</a></li>
+                        <li><a href="#">Network Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legals</h4>
+                    <ul>
+                        <li><a href="#">Operator Agreement</a></li>
+                        <li><a href="#">Privacy Protocol</a></li>
+                        <li><a href="#">Node Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 Aether Nexus Labs. All nodes synchronized.</p>
+                <div class="footer-extra">
+                    <span>Core Ver: v4.8.2-stable</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top" id="scroll-to-top-btn" aria-label="Scroll to top of page">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Interactive Card Details Modal -->
+    <div class="modal-overlay" id="card-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close details modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-header">
+                <span class="badge" id="modal-badge">Category</span>
+                <h3 id="modal-title">Module Title</h3>
+            </div>
+            <div class="modal-body">
+                <p id="modal-desc">This is detailed description text populated dynamically by JavaScript.</p>
+                <div class="specs-grid">
+                    <div class="spec-tile">
+                        <span class="tile-label">Node Integrity</span>
+                        <span class="tile-value text-cyan" id="modal-spec-1">99.98%</span>
+                    </div>
+                    <div class="spec-tile">
+                        <span class="tile-label">Deployment Load</span>
+                        <span class="tile-value text-magenta" id="modal-spec-2">Medium</span>
+                    </div>
+                    <div class="spec-tile">
+                        <span class="tile-label">Core Version</span>
+                        <span class="tile-value" id="modal-spec-3">v2.1.0</span>
+                    </div>
+                </div>
+                <!-- Interactive Action inside modal -->
+                <div class="modal-action-box">
+                    <button class="btn btn-primary btn-full" id="modal-run-test-btn">
+                        Execute Diagnostic Test
+                    </button>
+                    <div class="test-results" id="modal-test-results">
+                        <!-- Diagnostic output -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
